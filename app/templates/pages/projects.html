@@ -1,0 +1,25 @@
+{% extends "/layouts/home/index.html" %} 
+
+{% block title %}Projects{% endblock %} 
+
+{%block head %} 
+{{ super() }}
+ 
+{% endblock %} 
+{% block content %}
+<div class="row">
+    {%for project in projects%}
+ <div class="col" >
+    <div class="card" style="max-width: 18rem;">
+        <img src="{{project[4]}}" class="card-img-top" alt="{{project[1]}}">
+        <div class="card-body">
+          <h5 class="card-title">{{project[1]}}</h5>
+          <p class="card-text">{{project[2]}}</p>
+          <a href="{{project[3]}}" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+</div>
+ {%endfor%}
+</div>
+
+{% endblock %}

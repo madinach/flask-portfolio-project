@@ -1,0 +1,39 @@
+{% extends "/layouts/home/index.html" %} 
+
+{% block title %}Back Office{% endblock %} 
+
+{%block head %} 
+{{ super() }}
+ 
+{% endblock %} 
+{% block content %}
+ 
+<!doctype html>
+<title>Upload new File</title>
+
+<div class="mt-5">
+  <h3 st>Create New Project</h3>
+  <form method=post enctype=multipart/form-data action="/projects">
+    <div class="mb-3">
+        <label for="file" class="form-label">Cover</label>
+        <input name="file" type="file" class="form-control" id="cover" aria-describedby="cover">
+        
+      </div>
+      <div class="mb-3">
+        <label for="title" class="form-label">Title</label>
+        <input name="title" type="title" class="form-control" id="title">
+      </div>
+      <div class="mb-3">
+        <label for="description" class="form-label">Description</label>
+        <input name="description" type="textarea" rows="4" class="form-control" id="description">
+      </div>
+      <div class="mb-3">
+        <label for="url" class="form-label">Url</label>
+        <input name="url" type="url" class="form-control" id="url">
+      </div>
+      <button type="reset" class="btn btn-dark">Reset</button>
+      <button type="submit" class="btn btn-dark">Submit</button>
+</form>
+</div>
+ 
+{% endblock %}

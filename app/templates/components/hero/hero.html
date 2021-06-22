@@ -1,0 +1,11 @@
+{%macro HeroComponent(person)%}
+<div class="row hero">
+    <div class="col-4 d-flex align-items-center">
+        <img id="avatar" src="{{url_for('static', filename='/assets/profile.png')}}" alt="">
+    </div>
+    <div class="col-8 d-flex flex-column justify-content-center">
+        <h1>Ubeyt Demir</h1>
+        <h6>I am a Fullstack Web Developer, who focuses on MERN stack. I build beautiful web applications and API's with Javascript/Typescript.</h6>
+    </div>
+</div>
+{%endmacro%}

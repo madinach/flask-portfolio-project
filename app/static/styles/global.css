@@ -1,0 +1,22 @@
+body{
+    margin:0;
+   
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar{
+    background-color: black;
+}
+h1{
+    font-size:48pt;
+}
+#avatar{
+    width:240px;
+    border-radius: 50%;
+}
+
+.hero{
+    height:80vh
+}
+
+ 
